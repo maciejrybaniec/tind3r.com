@@ -11,6 +11,8 @@ export const getTokenDate = callback => {
 }
 
 export const checkIfInstalled = callback => {
+  return callback(true);
+
   if (window.chrome && window.chrome.webstore) {
     chrome.runtime.sendMessage(EXT_ID, {
       type: 'CHECK_INSTALLED',

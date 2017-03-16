@@ -23,7 +23,9 @@ class App extends Component {
   }
 
   componentDidMount() {
+    console.log('lalalal');
     checkIfInstalled(isInstalled => {
+      console.log('ghfd', isInstalled);
       this.setState({ isInstalled })
     })
   }
